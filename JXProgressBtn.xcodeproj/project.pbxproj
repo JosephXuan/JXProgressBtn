@@ -16,6 +16,7 @@
 		B841DC3E23532DD9004240A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B841DC3D23532DD9004240A7 /* main.m */; };
 		B841DC4823532DD9004240A7 /* JXProgressBtnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B841DC4723532DD9004240A7 /* JXProgressBtnTests.m */; };
 		B841DC5323532DD9004240A7 /* JXProgressBtnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B841DC5223532DD9004240A7 /* JXProgressBtnUITests.m */; };
+		D3A4A6E0885A078BC9C24C2D /* libPods-JXProgressBtn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACA7987C5F91F41064B88EC /* libPods-JXProgressBtn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ACA7987C5F91F41064B88EC /* libPods-JXProgressBtn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXProgressBtn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4240509F05E32B56D3BDA2 /* Pods-JXProgressBtn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXProgressBtn.debug.xcconfig"; path = "Target Support Files/Pods-JXProgressBtn/Pods-JXProgressBtn.debug.xcconfig"; sourceTree = "<group>"; };
 		B841DC2823532DD8004240A7 /* JXProgressBtn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXProgressBtn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B841DC2B23532DD8004240A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B841DC2C23532DD8004240A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		B841DC4E23532DD9004240A7 /* JXProgressBtnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXProgressBtnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B841DC5223532DD9004240A7 /* JXProgressBtnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXProgressBtnUITests.m; sourceTree = "<group>"; };
 		B841DC5423532DD9004240A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC00B1E71818DE907FECC255 /* Pods-JXProgressBtn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXProgressBtn.release.xcconfig"; path = "Target Support Files/Pods-JXProgressBtn/Pods-JXProgressBtn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A4A6E0885A078BC9C24C2D /* libPods-JXProgressBtn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5A926D0CFD5BA92139FFECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A4240509F05E32B56D3BDA2 /* Pods-JXProgressBtn.debug.xcconfig */,
+				CC00B1E71818DE907FECC255 /* Pods-JXProgressBtn.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B841DC1F23532DD8004240A7 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,8 @@
 				B841DC4623532DD9004240A7 /* JXProgressBtnTests */,
 				B841DC5123532DD9004240A7 /* JXProgressBtnUITests */,
 				B841DC2923532DD8004240A7 /* Products */,
+				B5A926D0CFD5BA92139FFECE /* Pods */,
+				DD4C6C0A930701492612BAF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,14 @@
 			path = JXProgressBtnUITests;
 			sourceTree = "<group>";
 		};
+		DD4C6C0A930701492612BAF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA7987C5F91F41064B88EC /* libPods-JXProgressBtn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B841DC5723532DD9004240A7 /* Build configuration list for PBXNativeTarget "JXProgressBtn" */;
 			buildPhases = (
+				0C464F8CA24C650E402B0396 /* [CP] Check Pods Manifest.lock */,
 				B841DC2423532DD8004240A7 /* Sources */,
 				B841DC2523532DD8004240A7 /* Frameworks */,
 				B841DC2623532DD8004240A7 /* Resources */,
@@ -261,6 +287,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C464F8CA24C650E402B0396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXProgressBtn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B841DC2423532DD8004240A7 /* Sources */ = {
@@ -437,6 +488,7 @@
 		};
 		B841DC5823532DD9004240A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A4240509F05E32B56D3BDA2 /* Pods-JXProgressBtn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +505,7 @@
 		};
 		B841DC5923532DD9004240A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC00B1E71818DE907FECC255 /* Pods-JXProgressBtn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
